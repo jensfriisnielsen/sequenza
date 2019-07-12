@@ -4,8 +4,8 @@ Description: Tools to analyze genomic sequencing data from
  paired normal-tumor samples, including cellularity and ploidy estimation; mutation
  and copy number (allele-specific and total copy number) detection, quantification
  and visualization.
-Version: 3.0.0
-Date: 2019-05-09
+Version: 3.0.1
+Date: 2019-07-12
 Authors@R: c(
    person(given = "Francesco", family = "Favero",
           email = "favero.francesco@gmail.com",

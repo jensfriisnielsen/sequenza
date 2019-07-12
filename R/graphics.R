@@ -146,10 +146,8 @@ chromosome.view <- function(baf.windows, ratio.windows, mut.tab = NULL,
         max.x <- max(c(max(baf.windows$end), max(ratio.windows$end)))
         xlim <- c(min.x, max.x)
     } else {
-        min.x <- min(c(min(baf.windows$start), min(ratio.windows$start),
-            min(mut.tab$position)))
-        max.x <- max(c(max(baf.windows$end), max(ratio.windows$end),
-            max(mut.tab$position)))
+        min.x <- min(c(min(baf.windows$start), min(ratio.windows$start), min(mut.tab$position)), na.rm=T)
+        max.x <- max(c(max(baf.windows$end), max(ratio.windows$end), max(mut.tab$position)), na.rm=T)
         xlim <- c(min.x, max.x)
         par(mar = c(0, 4, 0, 10), oma = c(5, 0, 4, 0),
             mfcol = c(3, 1), xaxt = "n", xpd = TRUE)
